@@ -2,7 +2,7 @@
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/tesla-software/oib/master.svg?style=flat-square)](https://www.travis-ci.com/tesla-software/oib.svg?branch=master)
+[![Build Status](https://www.travis-ci.com/tesla-software/oib.svg?branch=master)](https://travis-ci.com/github/tesla-software/oib)
 
 Validate OIB (Personal Identification Number).
 
