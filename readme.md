@@ -1,10 +1,10 @@
-# OIB Validator/Generator
+# OIB Validator
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
-[![Software License][ico-license]](LICENSE.md)
-[![Build Status][ico-travis]][link-travis]
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![Build Status](https://img.shields.io/travis/tesla-software/oib/master.svg?style=flat-square)](https://www.travis-ci.com/tesla-software/oib.svg?branch=master)
 
-Validate, generate OIB (Personal Identification Number).
+Validate OIB (Personal Identification Number).
 
 ## Install
 
@@ -32,13 +32,34 @@ OIB::validate('00000000001'); // Returns: bool
 OIB::validateMany('00000000001', '00000000002', ...); // Returns: array
 // or
 OIB::validateMany(['00000000001', '00000000002', ...]); // Returns: array
-```
-### Generation
 
+/**
+ * Results
+ *
+    [
+      "73963178454"   => false
+      "25878484848"   => false
+      "73963178454AA" => false
+      "25878484848ZZ" => false
+      "87783564545"   => false
+      "87783564545GG" => false
+      "12345678911"   => true
+      "91145678919"   => true
+      "87884784457"   => true
+      "87871118443"   => true
+      "36875454458"   => true
+      "78745548455"   => true
+    ]
+*/
+```
 
 ## Testing
 
 ``` bash
 composer test
 ```
+
+[ico-version]: https://img.shields.io/packagist/v/tesla-software/oib.svg?style=flat-square
+
+[link-packagist]: https://packagist.org/packages/tesla-software/oib
 
